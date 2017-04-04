@@ -1,0 +1,22 @@
+extends layout
+
+block head
+  link(href='/css/jsgrid.min.css', rel='stylesheet')
+  link(href='/css/jsgrid-theme.min.css', rel='stylesheet')
+  link(rel='stylesheet', href='/css/vex.css')
+  link(rel='stylesheet', href='/css/vex-theme-wireframe.css')
+
+block content
+  div#jsGrid
+  div#footer
+    a#help(href='#') HELP!!!
+    br
+    br
+    p P.S Keep the SensorTag in the light, if it gets dark the chance of an accident increases
+
+block scripts
+  script(src='/js/jsgrid.min.js')
+  script(src='/js/uicontroller.js')
+  script(src='/js/vex.combined.min.js')
+  script.
+    vex.defaultOptions.className = 'vex-theme-wireframe';
